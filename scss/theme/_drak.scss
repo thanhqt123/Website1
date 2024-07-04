@@ -1,7 +1,6 @@
 html.dark {
     --text-color: #fff;
-    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
-        saturate(7482%) hue-rotate(72deg) brightness(99%) contrast(99%);
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(99%) contrast(99%);
 
     --header-bg-color: #171c28;
     --top-act-group-bg-color: #292e39;
@@ -10,10 +9,16 @@ html.dark {
     --sidebar-bg: #292e39;
     --body-bg: #292e39;
     --dropdown-bg: #292e39;
-    --dropdown-arrow-color: brightness(0) saturate(100%) invert(8%) sepia(18%)
-        saturate(1283%) hue-rotate(183deg) brightness(90%) contrast(93%);
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(8%) sepia(18%) saturate(1283%) hue-rotate(183deg) brightness(90%)
+        contrast(93%);
     --dropdown-shadow: rgba(23, 28, 40, 0.4);
     --border-right-menu: #171c28;
     --heading-menu-color: #b9babe;
     --link-menu-color: #b9babe;
+    --cate-bg-color: #171c28;
+    --title-cate-item-color: #fff;
+    --like-btn-bg: #292e39;
+    --product-card-bg: #171c28;
+    --product-card-shadow: rgba(0, 0, 0, 0.2);
+    --footer-bg-color: #171c28;
 }
