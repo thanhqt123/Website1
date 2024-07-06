@@ -11,9 +11,30 @@
     font-weight: 500;
     white-space: nowrap;
     user-select: none;
+    cursor: pointer;
     &--primary {
         color: #171c28;
         background: #ffb700;
+    }
+    &--rounded {
+        border-radius: 99px;
+    }
+    &--text {
+        background: transparent;
+        color: #9e9da8;
+        font-weight: 400;
+    }
+    &--outline {
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid #d2d1d6;
+    }
+    &--disabled{
+        opacity: .5;
+        pointer-events: none;
+    }
+    &:hover{
+        opacity: .8;
     }
 }
 .like-btn {

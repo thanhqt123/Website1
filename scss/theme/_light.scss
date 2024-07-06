@@ -21,6 +21,12 @@ html {
     --product-card-bg: #fff;
     --product-card-shadow: rgba(237, 237, 246, 0.2);
     --footer-bg-color: #eee;
+    --filter-form-bg: #fff;
+    --filter-btn-color: #fff;
+    --filter-arrow: #fff;
+    --filter-form-tag-bg:#F8F8FB;
+    --filter-footer-bg: #fff;
+
 
     @include abstract.breakpoint(lg) {
         --header-bg-color: #fff;

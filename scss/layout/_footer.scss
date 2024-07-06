@@ -75,4 +75,10 @@
     &__copyright{
         font-size: 1.4rem;
     }
+    &__logo{
+        @include abstract.breakpoint(lg){
+            margin-top: 10px;
+        }
+        display: block;
+    }
 }

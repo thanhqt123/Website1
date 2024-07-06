@@ -1,6 +1,29 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
-
+window.addEventListener('load', function() {
+    'use strict';
+  
+    /**
+     * Performs a "Cutting the mustard" test. If the browser supports the features
+     * tested, adds a mdl-js class to the <html> element. It then upgrades all MDL
+     * components requiring JavaScript.
+     */
+    if ('classList' in document.createElement('div') &&
+        'querySelector' in document &&
+        'addEventListener' in window && Array.prototype.forEach) {
+      document.documentElement.classList.add('mdl-js');
+      componentHandler.upgradeAllRegistered();
+    } else {
+      /**
+       * Dummy function to avoid JS errors.
+       */
+      componentHandler.upgradeElement = function() {};
+      /**
+       * Dummy function to avoid JS errors.
+       */
+      componentHandler.register = function() {};
+    }
+  });
 /**
  * Hàm tải template
  *
@@ -229,3 +252,12 @@ const isDark = localStorage.dark === "true";
 document.querySelector("html").classList.toggle("dark", isDark);
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const btnTheme = document.getElementById("change-theme");
+    const htmlElement = document.documentElement;
+    btnTheme.onclick = function() {
+        htmlElement.id = "dark";
+        console.log('ID added to HTML element:', htmlElement.id);
+    }
+});
