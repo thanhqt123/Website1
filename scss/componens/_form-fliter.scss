@@ -130,6 +130,10 @@
             font-size: 1.4rem;
             font-weight: 500;
             line-height: 142.857%;
+
+            @include abstract.breakpoint(xl){
+                flex: 1;
+            }
         }
         &-tags {
             display: flex;

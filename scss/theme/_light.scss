@@ -24,8 +24,14 @@ html {
     --filter-form-bg: #fff;
     --filter-btn-color: #fff;
     --filter-arrow: #fff;
-    --filter-form-tag-bg:#F8F8FB;
+    --filter-form-tag-bg: #f8f8fb;
     --filter-footer-bg: #fff;
+    --auth-bg: #fff;
+    --product-detail-bg: #fff;
+    --breadcrumb-bg: #f6f6f6;
+    --product-info-bg: #F6F6F6;
+    --active-color:#1a162e;
+    --review-card-bg: #FAFAFD;
 
 
     @include abstract.breakpoint(lg) {

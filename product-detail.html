@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grocerymart</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76" href="./asset/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/asset/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Font -->
+        <link rel="stylesheet" href="./asset/font/stylesheet.css" />
+        <!-- Style -->
+        <link rel="stylesheet" href="./asset/css/main.css" />
+        <script src="./asset/js/script.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+        <main class="product-page">
+            <div class="container">
+                <div class="product-container">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="" class="breadcrumb__link">
+                                Departments
+                                <img src="./asset/icons/arrow-right.svg" alt="" class="breadcrumb__icon icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="breadcrumb__link">
+                                Coffee
+                                <img src="./asset/icons/arrow-right.svg" alt="" class="breadcrumb__icon icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="breadcrumb__link">
+                                Coffee Beans
+                                <img src="./asset/icons/arrow-right.svg" alt="" class="breadcrumb__icon icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="breadcrumb__link active"> LavAzza </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-container">
+                    <div class="row gy-xl-3">
+                        <div class="col-5 col-xl-12">
+                            <div class="product-preview">
+                                <div class="product-preview__item">
+                                    <img src="./asset/imgs/product-detail/item1.png" alt="" class="product-preview__img" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7 col-xl-12">
+                            <div class="product-info">
+                                <h2 class="product-info__heading">Coffee Beans - Espresso Arabica and Robusta Beans</h2>
+
+                                <div class="row">
+                                    <div class="col-6 col-xl-12">
+                                        <div class="info-group">
+                                            <img src="./asset/icons/start.svg" alt="" />
+                                            <p class="info-group__title">(3.5) 1100 reviews</p>
+                                        </div>
+                                        <lable class="filter__form-lable product-info__lable">Size/Weight</lable>
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-select-wrap">
+                                                <div class="filter__form-select" style="--width: 130px">
+                                                    500g
+                                                    <img src="./asset/icons/arrow-down.svg" alt="" class="filter__form-select-arrow icon" />
+                                                </div>
+                                                <div class="filter__form-select">
+                                                    gram
+                                                    <img src="./asset/icons/arrow-down.svg" alt="" class="filter__form-select-arrow icon" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-tags">
+                                                <button class="filter__form-tag">Small</button>
+                                                <button class="filter__form-tag">Medium</button>
+                                                <button class="filter__form-tag">Large</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xl-12">
+                                        <div class="info-group">
+                                            <img src="./asset/icons/dcm.svg" alt="" class="info-group__icon" />
+                                            <div>
+                                                <p class="info-group__title">Compare</p>
+                                                <p class="info-group__desc">From $6 for 1-3 days</p>
+                                            </div>
+                                        </div>
+                                        <div class="info-group">
+                                            <img src="./asset/icons/dcm.svg" alt="" class="info-group__icon" />
+                                            <div>
+                                                <p class="info-group__title">Compare</p>
+                                                <p class="info-group__desc">From $6 for 1-3 days</p>
+                                            </div>
+                                        </div>
+                                        <div class="info-group">
+                                            <img src="./asset/icons/dcm.svg" alt="" class="info-group__icon" />
+                                            <div>
+                                                <p class="info-group__title">Compare</p>
+                                                <p class="info-group__desc">From $6 for 1-3 days</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-info__pay">
+                                            <div class="product-info__row">
+                                                <p class="product-info__price">$500.00</p>
+                                                <p class="product-info__tax">10%</p>
+                                            </div>
+                                            <p class="product-info__total">$540.00</p>
+                                            <div class="product-info__row">
+                                                <button class="btn btn--primary product-info__btn">Add to cart</button>
+                                                <img src="./asset/icons/heart.svg" alt="" class="product-info__icon icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-tab">
+                        <ul class="product-tab__list">
+                            <li class="product-tab__item active">Description</li>
+                            <li class="product-tab__item">Features</li>
+                            <li class="product-tab__item">Review (1100)</li>
+                            <li class="product-tab__item">Similar</li>
+                        </ul>
+                        <!-- 
+                        <div class="product-tab__content-group">
+                            <div class="product-tab__content">
+                                <div class="row">
+                                    <div class="col-9 col-xl-12">
+                                        <div class="text-content product-tab__text-content">
+                                            <h2>Lorem ipsum dolor sit amet.</h2>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cupiditate. Modi, quidem,
+                                                ullam sint dolorum recusandae voluptates dignissimos similique animi assumenda praesentium
+                                                et! Illum dolorem est rem voluptas nam! Voluptatem.
+                                            </p>
+                                            <h3>Lorem ipsum dolor sit amet.</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cupiditate. Modi, quidem,
+                                                ullam sint dolorum recusandae voluptates dignissimos similique animi assumenda praesentium
+                                                et! Illum dolorem est rem voluptas nam! Voluptatem.
+                                            </p>
+                                            <img src="./asset/imgs/product-detail/item1.png" alt="" />
+                                            <h2>Lorem ipsum dolor sit amet.</h2>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cupiditate. Modi, quidem,
+                                                ullam sint dolorum recusandae voluptates dignissimos similique animi assumenda praesentium
+                                                et! Illum dolorem est rem voluptas nam! Voluptatem.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="product-tab__content-group">
+                            <div class="product-tab__content">
+                                <h2 class="product-tab__heading">What our customers are saying</h2>
+                                <div class="review-card__group gx-xl-3">
+                                    <div class="row">
+                                        <div class="col-4 col-xl-12">
+                                            <div class="review-card">
+                                                <div class="review-card__row">
+                                                    <img src="./asset/imgs/avatar1.png" alt="" class="review-card__avarta" />
+                                                    <div>
+                                                        <h2 class="review-card__heading">Jakir Hussen</h2>
+                                                        <p class="review-card__desc">Great product, I love this Coffee Beans</p>
+                                                    </div>
+                                                </div>
+                                                <div class="review-card__row">
+                                                    <p class="review-card__rate">
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/halfstart.svg" alt="" />
+                                                    </p>
+                                                    <p class="review-card__text">(3.5) Review</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-xl-12">
+                                            <div class="review-card">
+                                                <div class="review-card__row">
+                                                    <img src="./asset/imgs/avatar1.png" alt="" class="review-card__avarta" />
+                                                    <div>
+                                                        <h2 class="review-card__heading">Jakir Hussen</h2>
+                                                        <p class="review-card__desc">Great product, I love this Coffee Beans</p>
+                                                    </div>
+                                                </div>
+                                                <div class="review-card__row">
+                                                    <p class="review-card__rate">
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/halfstart.svg" alt="" />
+                                                    </p>
+                                                    <p class="review-card__text">(3.5) Review</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-xl-12">
+                                            <div class="review-card">
+                                                <div class="review-card__row">
+                                                    <img src="./asset/imgs/avatar1.png" alt="" class="review-card__avarta" />
+                                                    <div>
+                                                        <h2 class="review-card__heading">Jakir Hussen</h2>
+                                                        <p class="review-card__desc">Great product, I love this Coffee Beans</p>
+                                                    </div>
+                                                </div>
+                                                <div class="review-card__row">
+                                                    <p class="review-card__rate">
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/start.svg" alt="" />
+                                                        <img src="./asset/icons/halfstart.svg" alt="" />
+                                                    </p>
+                                                    <p class="review-card__text">(3.5) Review</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
+</html>

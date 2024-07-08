@@ -30,12 +30,12 @@
     }
 
     &__content {
-        background: #fff;
+        background: var(--auth-bg);
         @include abstract.breakpoint(md) {
             position: fixed;
             inset: 0;
             z-index: 1;
-            transform: translateX(-100%);
+            overflow-y: auto;
             transition: all 0.3s;
         }
         &.show {
@@ -50,9 +50,8 @@
             margin-left: auto;
             margin-right: auto;
             padding: 50px 0;
-            @include abstract.breakpoint(md){
+            @include abstract.breakpoint(md) {
                 padding: 20px;
-
             }
         }
     }
@@ -77,7 +76,7 @@
         margin-top: 60px;
         width: 100%;
 
-        @include abstract.breakpoint(md){
+        @include abstract.breakpoint(md) {
             margin-top: 30px;
         }
     }
@@ -102,10 +101,8 @@
         line-height: 144.444%;
         margin-top: 108px;
         margin-left: 10px;
-        @include abstract.breakpoint(md){
+        @include abstract.breakpoint(md) {
             margin-top: 12px;
-
         }
-        
     }
 }

@@ -1,0 +1,134 @@
+.product-page {
+  background: var(--product-detail-bg);
+}
+
+.product-container {
+  margin-top: 30px;
+}
+
+.breadcrumb {
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--breadcrumb-bg);
+  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 767.98px) {
+  .breadcrumb {
+    flex-wrap: wrap;
+  }
+}
+.breadcrumb__link {
+  color: #9e9da8;
+  font-weight: 500;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.breadcrumb__link.active {
+  color: var(--active-color);
+}
+.breadcrumb__icon {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(4%) saturate(521%) hue-rotate(206deg) brightness(85%) contrast(90%);
+}
+
+.product-preview__img {
+  width: 100%;
+}
+
+.product-info {
+  background: var(--product-info-bg);
+  padding: 60px;
+}
+.product-info__heading {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 138.462%;
+}
+.product-info__lable {
+  margin-top: 30px;
+}
+.product-info__pay {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #b9babe;
+}
+.product-info__row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.product-info__price {
+  font-weight: 500;
+  line-height: 150%;
+}
+.product-info__tax {
+  padding: 8px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), #67b044;
+  color: #67b044;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+.product-info__total {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 138.462%;
+  margin: 20px 0;
+}
+.product-info__btn {
+  flex: 1;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 27px;
+}
+.info-group__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 144.444%;
+}
+.info-group__desc {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-top: 4px;
+}
+
+.product-tab__list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 767.98px) {
+  .product-tab__list {
+    flex-wrap: wrap;
+  }
+}
+.product-tab__item {
+  color: #9e9da8;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 145.455%;
+}
+.product-tab__item.active {
+  font-weight: 600;
+}
+.product-tab__text-content {
+  margin-top: 30px;
+}
+.product-tab__heading {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 141.667%;
+}
+
+/*# sourceMappingURL=product-detail.css.map */

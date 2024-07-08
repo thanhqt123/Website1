@@ -1,0 +1,142 @@
+@use "../abstract";
+.product-page{
+    background: var(--product-detail-bg);
+}
+.product-container {
+    margin-top: 30px;
+}
+.breadcrumb {
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--breadcrumb-bg);
+    box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include abstract.breakpoint(md) {
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        color: #9e9da8;
+        font-weight: 500;
+        line-height: 150%;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &.active {
+            color: var(--active-color);
+
+        }
+    }
+    &__icon {
+        filter: brightness(0) saturate(100%) invert(74%) sepia(4%) saturate(521%) hue-rotate(206deg) brightness(85%) contrast(90%);
+    }
+}
+.product-preview {
+    &__img {
+        width: 100%;
+    }
+}
+
+.product-info {
+    background: var(--product-info-bg);
+    padding: 60px;
+    &__heading {
+        font-size: 2.6rem;
+        font-weight: 500;
+        line-height: 138.462%;
+    }
+
+    &__lable {
+        margin-top: 30px;
+    }
+
+    &__pay {
+        margin-top: 30px;
+        padding: 20px;
+        border-radius: 6px;
+        border: 1px solid #b9babe;
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    &__price {
+        font-weight: 500;
+        line-height: 150%;
+    }
+    &__tax {
+        padding: 8px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), #67b044;
+        color: #67b044;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+    }
+    &__total {
+        font-size: 2.6rem;
+        font-weight: 500;
+        line-height: 138.462%;
+        margin: 20px 0;
+    }
+
+    &__btn {
+        flex: 1;
+    }
+}
+.info-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 27px;
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
+    &__desc {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 142.857%;
+        margin-top: 4px;
+    }
+}
+.product-tab {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        @include abstract.breakpoint(md) {
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        color: #9e9da8;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+        &.active {
+            font-weight: 600;
+        }
+    }
+
+    &__text-content {
+        margin-top: 30px;
+    }
+
+    &__heading {
+        margin-top: 30px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+    }
+}
