@@ -1,5 +1,7 @@
 .product-page {
   background: var(--product-detail-bg);
+  display: flex;
+  flex-direction: column;
 }
 
 .product-container {

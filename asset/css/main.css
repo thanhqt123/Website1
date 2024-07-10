@@ -2332,11 +2332,12 @@ html {
 }
 @media (max-width: 767.98px) {
   .auth__content-inner {
-    padding: 20px;
+    padding: 0;
   }
 }
 .auth__heading {
   margin-top: 50px;
+  text-align: center;
   font-size: 3rem;
   font-weight: 500;
   line-height: 146.667%;
@@ -2364,6 +2365,7 @@ html {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 146.667%;
+  white-space: nowrap;
 }
 .auth__btn {
   width: 100%;
@@ -2387,6 +2389,8 @@ html {
 
 .product-page {
   background: var(--product-detail-bg);
+  display: flex;
+  flex-direction: column;
 }
 
 .product-container {
