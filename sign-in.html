@@ -56,7 +56,7 @@
                         <h1 class="auth__heading">Hello Again!</h1>
                         <p class="auth__desc"> Welcome back to sign in. As a returning customer, you have access to your previously saved all information.</p>
     
-                        <form action="" class="form auth__form">
+                        <form action="./index-logined.html" class="form auth__form">
                             <div class="form__group">
                                 <div class="form__input-group">
                                     <input type="text" placeholder="Email" class="form__input" />
@@ -79,9 +79,12 @@
                                 <a href="./new-password.html" class="auth__link form__pull-right">Recovery Password</a>
                             </div>
                             <div class="form__group auth__btn-group">
-                                <button class="btn btn--primary auth__btn">
-                                    <a href="./index-logined.html">Sign In</a>
-                                </button>
+                                <a href="./index-logined.html">
+                                    <button class="btn btn--primary auth__btn">
+                                        Sign In
+                                    </button>
+
+                                </a>
                                 <button class="btn btn--outline auth__btn">
                                     <img src="./asset/icons/btngmail.svg" alt="" class="btn__icon icon" />
                                     Sign in with Gmail
@@ -98,6 +101,7 @@
             </main>
         </body>
         <script>
+            
             const authArrow=document.querySelector('.auth__intro-next');
             const signUpEl=document.querySelector('.auth__content');
             authArrow.addEventListener('click', function(){

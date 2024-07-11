@@ -29,10 +29,12 @@ html {
     --auth-bg: #fff;
     --product-detail-bg: #fff;
     --breadcrumb-bg: #f6f6f6;
-    --product-info-bg: #F6F6F6;
-    --active-color:#1a162e;
-    --review-card-bg: #FAFAFD;
-
+    --product-info-bg: #f6f6f6;
+    --active-color: #1a162e;
+    --review-card-bg: #fafafd;
+    --cart-info-bg: #f6f6f6;
+    --cart-gift-bg:#f6f6f6;
+    --cart-item-sprt-bg: #000;
 
     @include abstract.breakpoint(lg) {
         --header-bg-color: #fff;
