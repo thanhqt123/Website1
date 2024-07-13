@@ -1,0 +1,80 @@
+@use "../abstract";
+.user-address {
+    margin: 30px 0;
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        @include abstract.breakpoint(md) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+    }
+    &__info {
+        flex: 1;
+    }
+
+    &__desc {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 146.667%;
+    }
+}
+.address-card {
+    margin-top: 30px;
+    display: flex;
+    @include abstract.breakpoint(md) {
+        flex-direction: column;
+    }
+    &__right {
+        @include abstract.breakpoint(md) {
+            margin-top: 16px;
+        }
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        gap: 16px;
+    }
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+    &__choose {
+        height: 100%;
+    }
+    &__desc {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 146.667%;
+    }
+    &__list {
+        margin-top: 30px;
+        display: flex;
+        gap: 30px;
+        list-style: disc;
+    }
+    &__item {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 142.857%;
+        white-space: nowrap;
+    }
+
+    &__check-input {
+        appearance: none;
+        &::before {
+            content: url(../icons/nocheck.svg);
+        }
+        &:checked::before {
+            content: url(../icons/checkbox.svg);
+        }
+    }
+}

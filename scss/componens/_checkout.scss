@@ -8,8 +8,25 @@
     border-radius: 20px;
     box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
 
+    @include abstract.breakpoint(md){
+        padding: 10px;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+        margin: 30px 0;
+    }
+
     &__sub-lable {
         font-weight: 400;
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
     }
 }
 .cart-item {
@@ -108,10 +125,12 @@
     &__input {
         border-radius: 10px;
         border: 1px solid #d2d1d6;
-        padding: 10px 20px;
+        padding: 10px 15px ;
         display: flex;
         align-items: center;
+        // justify-content: space-between;
         gap: 10px;
+        // min-width: 135px;
 
         font-size: 1.5rem;
         font-style: normal;
